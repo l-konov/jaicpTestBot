@@ -1,6 +1,6 @@
 # Enable basic functions and patterns from zb-common
-require: common.js
-    module = common
+require: common.js 
+    module = common     
 require: patterns.sc
     module = common
 require: text/text.sc

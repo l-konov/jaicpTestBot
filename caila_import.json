@@ -1,132 +1,192 @@
 {
-    "project": {
-        "id": "zb-classifier-template",
-        "name": "zb-classifier-template",
-        "folder": "/"
+  "project" : {
+    "id" : "bot_git_hub-1000062223-Yyy",
+    "name" : "bot_git_hub-1000062223-Yyy",
+    "folder" : "/jaicp"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "UTC",
+    "extendedSettings" : {
+      "useShared" : false
     },
-    "settings": {
-        "language": "ru",
-        "spellingCorrection": false,
-        "classificationAlgorithm": "sts",
-        "timezone": "UTC",
-        "extendedSettings": {
-            "useShared": false
-        }
+    "shared" : false
+  },
+  "intents" : [ {
+    "path" : "/CardPayment",
+    "answer" : "Оплатить у нас можно как по карте, так и наличными.",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "по карте оплатить можно?"
+    }, {
+      "text" : "а вы карту принимаете?"
+    }, {
+      "text" : "картой оплата пройдет?"
+    }, {
+      "text" : "а вы безнал принимаете?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
     },
-    "intents": [
-        {
-            "id": 4692,
-            "path": "/CardPayment",
-            "answer": "Оплатить у нас можно как по карте, так и наличными.",
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "по карте оплатить можно?"
-                },
-                {
-                    "text": "а вы карту принимаете?"
-                },
-                {
-                    "text": "картой оплата пройдет?"
-                },
-                {
-                    "text": "а вы безнал принимаете?"
-                }
-            ],
-            "patterns": []
-        },
-        {
-            "id": 4690,
-            "path": "/Location",
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "как вас найти"
-                },
-                {
-                    "text": "как к вам проехать"
-                },
-                {
-                    "text": "где вы находитесь"
-                }
-            ],
-            "patterns": []
-        },
-        {
-            "id": 4693,
-            "path": "/ScheduleAppointment",
-            "answer": "Вы можете назначить встречу завтра, в 18:00.",
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "А к вам можно записаться на прием?"
-                },
-                {
-                    "text": "а записаться можно?"
-                },
-                {
-                    "text": "а запись возможна?"
-                },
-                {
-                    "text": "а можно назначить встречу на время?"
-                }
-            ],
-            "patterns": []
-        },
-        {
-            "id": 4689,
-            "path": "/WorkHours",
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "как вы работаете?"
-                },
-                {
-                    "text": "до скольки вы работаете?"
-                }
-            ],
-            "patterns": []
-        }
-    ],
-    "entities": [],
-    "enabledSystemEntities": [
-        "duckling.number",
-        "duckling.time",
-        "duckling.duration",
-        "duckling.phone-number",
-        "duckling.email",
-        "duckling.url"
-    ],
-    "systemEntities": [
-        {
-            "name": "duckling.number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.time",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.duration",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.phone-number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.email",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.url",
-            "version": "v2",
-            "enabled": true
-        }
-    ]
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Location",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "как вас найти"
+    }, {
+      "text" : "как к вам проехать"
+    }, {
+      "text" : "где вы находитесь"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/ScheduleAppointment",
+    "answer" : "Вы можете назначить встречу завтра, в 18:00.",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "А к вам можно записаться на прием?"
+    }, {
+      "text" : "а записаться можно?"
+    }, {
+      "text" : "а запись возможна?"
+    }, {
+      "text" : "а можно назначить встречу на время?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/WorkHours",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "как вы работаете?"
+    }, {
+      "text" : "до скольки вы работаете?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ]
 }
