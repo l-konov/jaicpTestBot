@@ -1,7 +1,7 @@
 {
   "project" : {
-    "id" : "bot_git_hub-1000062223-Yyy",
-    "name" : "bot_git_hub-1000062223-Yyy",
+    "id" : "bot_git_hub_branch-1000062223-pdh",
+    "name" : "bot_git_hub_branch-1000062223-pdh",
     "folder" : "/jaicp"
   },
   "settings" : {
@@ -188,5 +188,6 @@
   }, {
     "name" : "zb.number",
     "enabled" : false
-  } ]
+  } ],
+  "faq" : [ ]
 }
