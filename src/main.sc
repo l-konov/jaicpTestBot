@@ -1,4 +1,5 @@
 # Enable basic functions and patterns from zb-common
+# Привет
 require: common.js   
     module = common     
 require: patterns.sc
